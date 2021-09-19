@@ -1,0 +1,160 @@
+ *{
+    border: 0.5px dashed lightgrey;
+    margin: 0px;
+padding: 0px;
+
+} 
+.main-header {
+    background-color: #EAC926;
+    padding: 20px;
+    }
+.main-navbar ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.main-navbar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size:16px;
+}
+
+.al-medio {
+    text-align:center;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+        background-color: #ebebeb;
+}
+.burger-menu{
+    text-align: center;
+}
+.burger-menu i{
+    background-color: #1259c3;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    margin: 01px 0px 20px 0px;
+    padding: 7px;
+  
+    
+}
+.logo {
+    width: 200px;
+}
+p{
+    font-size:12px;  
+}
+.descuento{
+    font-size: 16px;
+    width:70%;
+}
+.descripcion{
+    font-size: 16px;
+    display:none;
+}
+h3 {
+    font-size: 24px;
+}
+.precio{
+    font-size: 18px;
+    width:30%;
+}
+
+header nav{
+    font-size: 12px;
+    margin-top:10px;
+    display:none;
+   }
+header ul li{
+    list-style-type: none;
+  
+}
+header ul li a{
+    text-decoration: none;
+    color: #000
+}
+/*inicio de footer*/
+.footer-icon{
+    text-align: center;
+    color:blue;
+}
+footer p{
+    text-align: center;
+    padding: 10px;
+}
+footer h4{
+    text-align: center;
+    font-weight: bold;
+
+}
+footer {
+    margin-top: 20;
+    background-color: #fff;
+}
+
+/*fin de footer*/
+
+main section{
+    width: 90%;
+    margin: auto;
+}
+main section article{
+margin-top: 10px;
+}
+main section article img{
+    width:80%;
+   
+}
+.contenedor-articulo{
+    border-top: 1px solid #ebebeb;
+    background-color: #fff;
+
+}
+.circulo-icono{
+    color: #39b54a;
+    border-radius: 50%;
+    border: 1px solid #39b54a;
+    width:20px; 
+    height: 20px;
+     padding:5px;
+}
+.fa-truck{
+    margin:3px;
+
+}
+
+.en-linea{
+    display:flex;
+}
+@media (min-width: 361px) {
+    .descripcion{
+               display:block;
+    }
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+            }
+            header nav{
+display: block;
+            }
+            .burger-menu{
+                display:block;
+            }
+}
+@media (min-width: 768px) {
+    .descripcion{
+               display:block;
+    }
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+            }
+            header nav{
+display: block;
+            }
+            .burger-menu{
+                display:none;
+            }
+}
