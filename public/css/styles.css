@@ -1,160 +1,436 @@
- *{
-    /*border: 0.5px dashed lightgrey;*/
+*{
+    box-sizing: border-box;
     margin: 0px;
-padding: 0px;
-
-} 
-.main-header {
-    background-color: #EAC926;
-    padding: 20px;
-    }
-.main-navbar ul{
-    list-style:none;
-    margin:0;
-    padding:0;
+    padding: 0px;
+    font-size: 16px;
 }
-
-.main-navbar a{
-    text-decoration: none;
-    color: #222222;
-    display: inline-block;
-    padding: 5px 0;
-    font-size:16px;
-}
-
-.al-medio {
-    text-align:center;
-}
+/* empiezoo*/
 body {
-    font-family: 'Roboto', sans-serif;
-        background-color: #ebebeb;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    background-color: #ebebeb;
 }
-.burger-menu{
+header {
+    background-color: #EAC926;
+}
+
+main{
+    padding: 15px 0px;
+}
+
+.headline{
+    font-size: 24px; 
     text-align: center;
+    margin: 20px 0px;
 }
-.burger-menu i{
-    background-color: #1259c3;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 20px;
-    margin: 01px 0px 20px 0px;
-    padding: 7px;
-  
-    
-}
-.logo {
-    width: 200px;
-}
-p{
-    font-size:12px;  
-}
-.descuento{
-    font-size: 16px;
-    width:70%;
-}
-.descripcion{
-    font-size: 16px;
-    display:none;
-}
-h3 {
-    font-size: 24px;
-}
-.precio{
+.body-text { font-size: 12px; }
+.precios { 
+    display: flex;
     font-size: 18px;
-    width:30%;
+      font-weight: 700;
+}
+.desc { 
+    display: flex;
+    font-size: 16px;
+    color: #39b54a; 
+       font-weight: 300;
+ }
+ 
+.descripcion { 
+    font-size: 16px; 
+    color: #666666;
+    font-weight: 400;
+    display: none;
 }
 
-header nav{
-    font-size: 12px;
-    margin-top:10px;
-    display:none;
-   }
-header ul li{
-    list-style-type: none;
-  
-}
-header ul li a{
-    text-decoration: none;
-    color: #000
-}
-/*inicio de footer*/
-.footer-icon{
-    text-align: center;
-    color:blue;
-}
-footer p{
-    text-align: center;
-    padding: 10px;
-}
-footer h4{
-    text-align: center;
-    font-weight: bold;
-
-}
-footer {
-    margin-top: 20;
-    background-color: #fff;
+header div div i.hand{
+    font-size: 10px;
 }
 
-/*fin de footer*/
 
-main section{
-    width: 90%;
+.main-header {
+    max-width: 1200px;
+    padding: 20px;
     margin: auto;
 }
-main section article{
-margin-top: 10px;
+.main-header-top-bar{
+    display:block;
 }
+
+div.logo-search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   align-items: center;
+}
+.logo {
+    display: inline-block;
+    width: 80px;
+}
+
+
+
+.search-field{
+    border: none;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+/*input busqueda*/
+input[type="text"], input[type="email"], input[type="date"], input[type="file"], input[type="password"]{
+    width: 100%;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #222;
+}
+
+
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.burger-menu{
+    display: block;
+    background-color:#1259c3;
+    color: #ffffff;
+    max-width: 2.5rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    font-size: 0.7rem;
+    margin:auto;
+    margin-top: 10px;
+}
+.container-nav{
+    display:none;
+}
+.container-nav ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.container-nav a{
+    text-decoration: none;
+    color: #333;
+    display:inline-block;
+    padding: 0.2rem;
+    text-align: justify;
+}
+.left-nav{
+    text-align: left;
+    margin-left: 0px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+/*margen fondo y sombra  products*/
+main section article {
+    margin: 10px 0px;
+    background-color: #FFF;
+        transition: all 450ms;
+}
+
 main section article img{
-    width:80%;
-   
+    width: 100%;
 }
-.contenedor-articulo{
+main section article .product-info{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
     border-top: 1px solid #ebebeb;
-    background-color: #fff;
-
+    position: relative;
+    padding: 15px;
 }
-.circulo-icono{
-    color: #39b54a;
-    border-radius: 50%;
+main section div.products{
+    display: flex;
+    flex-direction: row;
+       justify-content: space-between;
+    align-items: flex-start;
+}
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px ;
+    width: 30px ;
+    height: 30px ;
     border: 1px solid #39b54a;
-    width:20px; 
-    height: 20px;
-     padding:5px;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: all 0.5s;
 }
-.fa-truck{
-    margin:3px;
 
+main section div article:hover .descripcion {
+    display: block;
+    color: black;
+    margin-top: 0px;
+}
+main section article:hover i{
+    transform: rotate(-90deg);
 }
 
-.en-linea{
-    display:flex;
+footer{
+    background-color: #fff;
 }
-@media (min-width: 361px) {
-    .descripcion{
-               display:block;
+footer div.main-footer {
+    max-width: 1200px;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+}
+footer div.main-footer section div{
+    padding-top: 10px;
+}
+footer div.main-footer section p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.footer-headline{ 
+    color: #333;
+    font-weight: bold; 
+}
+/* Register y Login*/
+
+body main form{
+    display: block;
+    margin: auto;
+    border: none;
+    padding: 15px 25px;
+}
+
+/*register*/
+body main form div label[for="date-of-birth"], label[for="profile"], label[for="categorie"]{
+    font-size: 18px;
+}
+body main form div.checkbox-box label[for="checkbox"], label[for="radio"]{
+    vertical-align: center;
+    font-size: 9px;
+}
+
+.danger-button{
+    display:block;
+    margin: 15px 0px;
+    padding: 10px 5px;
+    border-radius: 2px;
+    border: none;
+    width: 100%;
+    background-color: orange;
+  /*  transition: all 450ms;*/
+}
+
+.buttons-on-reg{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+/*botones*/
+.login-button{
+    display:block;
+    margin: 15px 0px;
+    padding: 10px 5px;
+    border-radius: 2px;
+    border: none;
+    width: 100%;
+    background-color:lightblue;
+    /*transition: all 450ms;*/
+}
+.login-button:hover{
+        background-color: #f7fa5e;
+}*/
+
+/* Login.html */
+.input-on-log{
+    width: 100%;
+    padding: 2px 5px;
+    margin: 15px 0px;
+}
+
+/* Trabajos sobre los media queries, mobile first */
+
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
     }
-    main section article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-            }
-            header nav{
-display: block;
-            }
-            .burger-menu{
-                display:block;
-            }
-}
-@media (min-width: 768px) {
-    .descripcion{
-               display:block;
+    .precios,
+    .desc{
+        width: 50%;
     }
-    main section article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-            }
-            header nav{
-display: block;
-            }
-            .burger-menu{
-                display:none;
-            }
+    body main form{ 
+        width: 340px;
+    }
 }
+
+@media (min-width: 555px){
+    body main form div.checkbox-box label[for="checkbox"], label[for="radio"]{
+        font-size: 16px;
+    }
+    main section div.products article{
+        width: 40%;
+    }
+    body main form {
+        width: 500px;
+    }
+    .copy-header{
+        max-width: 180px;
+        text-align: right;
+    }
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    main div.buttons-on-reg button {
+        width: 45%;
+    }
+    .burger-menu{
+        display: block;
+        background-color:#1259c3;
+        color: #ffffff;
+        max-width: 3rem;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        text-align: center;
+        font-size: 1rem;
+        margin:auto;
+        margin-top: 15px;
+    }
+    header div div.logo-search{
+        width: 70%;
+        justify-content: flex-start;
+    }
+    body header div div form{
+        width: 75%;
+    }
+}
+
+
+
+@media (min-width: 768px){
+    .container-nav { margin-top: 1rem; }
+    body header div div form{
+        width: 70%;
+    }
+    header div div.logo-search{
+    justify-content: space-between;
+    }
+    .logo{
+        width: 100px;
+        margin-left: 15px;
+    }
+    .search-field{
+        width: 150%;
+        border: none;
+        border-right: none;
+        border-radius: 8px 0 0 8px;
+        margin-right: 0px;
+    }
+    .search-field::placeholder{
+        font-size: 14px;
+        padding-left: 4px;    
+    }
+    .search-button{
+            width: 4rem;
+            background-color: white;
+            border: 1px solid #fff;
+            border-left: 0.8px solid rgb(216, 213, 213);
+            margin-left: 0px;
+            border-radius: 0 8px 8px 0;
+            padding: 10px 0px;
+    }
+    
+    .burger-menu{
+        display: none;
+    }
+    .container-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-nav ul{
+        display:flex;
+    }
+    .container-nav li{
+        margin: 0.2rem;
+    }
+    main section div.products article{
+        width: 20%;
+    }
+    body main form {
+        width: 768px;
+    }
+    main div.buttons-on-reg button {
+        width: 45%;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+
+    .logo{ margin-left: 0px; }
+    .main-header, main {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .copy-header{ 
+        max-width: none;
+        margin: 0px;
+    }
+    .container-nav{ margin-top: 1.5rem; }
+    .container-nav li{ margin: 0 0.8rem; }
+    footer div.main-footer {
+        padding: 25px 0px;
+        max-width: 1200px;
+        display: flex;
+    }
+    footer div.main-footer section div {
+        display: inline-block;
+        max-width: 30%;
+        margin: auto;
+    }
+    footer div.main-footer p { padding: 10px 0px; }
+    body main form { width: 900px; }
+
+    header div.main-header-top-bar{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    header div.main-header-top-bar div .logo-search{
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+    }
+    header div.main-header-top-bar div .logo{
+        display: inline-block;
+        width: 120px;
+    }
+    header div.main-header-top-bar form{
+        width: 80%;
+    }
+    header div.main-header-top-bar div.copy-header{
+        width: 25%;
+    }
+}
+
+
+
+
+
